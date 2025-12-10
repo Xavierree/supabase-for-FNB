@@ -1,73 +1,36 @@
-# Supabase FNB Cloud System
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-## Prerequisites
+## Getting Started
 
-### Python Environment
-1.  Navigate to the root directory.
-2.  Create and activate a virtual environment (optional but recommended):
-    ```bash
-    python -m venv venv
-    source venv/bin/activate  # On Windows: venv\Scripts\activate
-    ```
-3.  Install dependencies:
-    ```bash
-    pip install supabase python-dotenv
-    ```
-4.  **Environment Variables**: Ensure you have a `.env` file in the root directory with the following keys:
-    - `SUPABASE_URL_A`
-    - `SUPABASE_KEY_A`
-    - `SUPABASE_URL_B`
-    - `SUPABASE_KEY_B`
+First, run the development server:
 
-### Next.js Dashboard
-1.  Navigate to the `master-dashboard` directory:
-    ```bash
-    cd master-dashboard
-    ```
-2.  Install dependencies:
-    ```bash
-    npm install
-    ```
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-## Running the Application
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-### Python Components
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-#### Store Nodes
-Run the store nodes to listen for commands and process transactions:
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-- **Store Node A**:
-  ```bash
-  python store_node_a.py
-  ```
+## Learn More
 
-- **Store Node B**:
-  ```bash
-  python store_node_b.py
-  ```
+To learn more about Next.js, take a look at the following resources:
 
-#### Data Seeding
-Use these scripts to populate the databases with initial data:
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-- **Seed Token A**:
-  ```bash
-  python seed_data_a.py
-  ```
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
 
-- **Seed Token B**:
-  ```bash
-  python seed_data_b.py
-  ```
+## Deploy on Vercel
 
-### Dashboard
-To start the Next.js development server:
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-1.  Navigate to `master-dashboard`:
-    ```bash
-    cd master-dashboard
-    ```
-2.  Run the development server:
-    ```bash
-    npm run dev
-    ```
-3.  Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

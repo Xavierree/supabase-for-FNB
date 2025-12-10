@@ -24,8 +24,3 @@ create table command_results (
   result_data jsonb, -- Hasil hitungan, misal: { "total": 500000 }
   created_at timestamp with time zone default timezone('utc'::text, now())
 );
-
--- Seed Data (Data Awal)
-insert into transactions (store_id, menu_item, amount) values
-('TOKO_A', 'Nasi Goreng', 20000), ('TOKO_A', 'Nasi Goreng', 25000), ('TOKO_A', 'Es Teh', 5000),
-('TOKO_B', 'Nasi Goreng', 22000), ('TOKO_B', 'Mie Goreng', 18000);
